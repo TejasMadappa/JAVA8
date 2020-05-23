@@ -5,6 +5,17 @@ import java.util.List;
 public class Student {
     private long id;
     private String name;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", grade='" + grade + '\'' +
+                ", activities=" + activities +
+                '}';
+    }
+
     private String grade;
     private List<String> activities;
 
